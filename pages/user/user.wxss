@@ -1,0 +1,44 @@
+/* pages/user/user.wxss */
+.portraitBg{
+  width: 100%
+}
+.portrait{
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  top: 40px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+.portraitGroup {
+  display: flex;
+  justify-content: center;
+}
+.username {
+  position: absolute;
+  top: 110px;
+  color: #73a8f8;
+}
+.settingCon {
+  margin-top: 10px;
+}
+.settingItem{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 14px;
+  color:#605e60;
+  border-bottom: 1px solid #ccc;
+}
+.settingItem image {
+  height: 24px;
+  width: 24px;
+}
+.v-align {
+  display: flex;
+  align-items:center;
+}
+icon {
+  margin-left: 5px;
+}

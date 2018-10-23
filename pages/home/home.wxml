@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 轮播图 -->
+  <swiper indicator-dots="true" indicator-color="white" indicator-active-color="#1888fc" autoplay='true' interval='3000' circular='true'>
+    <swiper-item wx:for="{{banners}}">
+      <image src='{{item.imgUrl}}'></image>
+    </swiper-item>
+  </swiper>
+  <!-- 导航 -->
+  <view class='navs'>
+    <view class='nav-item' wx:for="{{icons}}">
+      <image src="{{item.imgUrl}}" class='iconPic'></image>
+      <view class='iconTitle'>{{item.name}}</view>
+    </view>
+  </view>
+  <!-- 文章 -->
+  <view class='article'>
+    <view class='article-item' wx:for="{{article}}">
+      <navigator url='{{item.link}}' open-type='navigate'>
+        <image src='{{item.imgUrl}}' mode='widthFix' class='articlePic'></image>
+        <view class='articleTitle'>{{item.title}}</view>
+      </navigator>
+    </view>
+  </view>
+</view>
